@@ -25,7 +25,7 @@ SecRandom v3 是基于 .NET 的桌面应用：
 
 ### 前置条件
 
-- [.NET SDK 10.0.x](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [.NET SDK 9.0.x](https://dotnet.microsoft.com/download/dotnet/9.0)
 - Git
 - 目标平台对应的桌面运行环境；实际打包与安装方式以发行版本说明为准。
 

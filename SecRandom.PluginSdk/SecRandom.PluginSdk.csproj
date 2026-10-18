@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <PackageId>SecRandom.PluginSdk</PackageId>
@@ -17,7 +17,7 @@
     <ItemGroup>
         <ProjectReference Include="..\SecRandom.Core\SecRandom.Core.csproj"
                           IncludeAssets="all" />
-        <None Include="SecRandom.PluginSdk.targets" Pack="True" PackagePath="build/net10.0" />
+        <None Include="SecRandom.PluginSdk.targets" Pack="True" PackagePath="build/net9.0" />
         <None Include="README.md" Pack="True" PackagePath="\" />
     </ItemGroup>
 

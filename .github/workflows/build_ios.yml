@@ -48,7 +48,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: 10.0.401
+          dotnet-version: 9.0.319
 
       # Refuse a tag that metadata.yaml does not point at before spending the AOT build on it.
       - name: Validate release metadata
@@ -76,7 +76,7 @@ jobs:
       - name: Install iOS workload
         shell: bash
         run: |
-          dotnet workload install ios --version 10.0.401
+          dotnet workload install ios --version 9.0.319
           dotnet workload --info
 
       - name: Publish unsigned iOS arm64 IPA
@@ -99,7 +99,7 @@ jobs:
           # without exhausting the runner's 7 GB when LLVM AOT is in flight.
           dotnet publish SecRandom.iOS/SecRandom.iOS.csproj \
             -c Release \
-            -f net10.0-ios \
+            -f net9.0-ios \
             -r ios-arm64 \
             -p:Version="$version" \
             -p:ApplicationVersion=${{ github.run_number }} \

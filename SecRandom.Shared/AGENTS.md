@@ -91,7 +91,7 @@ Keep this map short and stable. When code moves, AI agents should re-read the mo
 
 ## CONVENTIONS
 
-- Keep this project UI-free and Avalonia-free; it targets `net8.0` while app/Core target `net10.0`.
+- Keep this project UI-free and Avalonia-free; it targets `net8.0` while app/Core target `net9.0`.
 - Shared models are data contracts used across projects; avoid Host, logging, windows, or app service dependencies.
 - Profile models may be observable/serializable contract types; keep property defaults safe for missing JSON.
 - `Student` and `Prize` include hidden persisted `RecordId` values used as stable history/fairness identities. Keep visible `Id` optional; it is display/import metadata, not a required identity. Their `IsCandidate` checks require the item to be enabled and to have a nonblank `Id` or `Name`.

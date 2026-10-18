@@ -2,7 +2,7 @@ namespace SecRandom.Mobile;
 
 /// <summary>
 /// Platform seam for staging a downloaded update package and handing it to the system installer.
-/// The shared library compiles as neutral net10.0, so platform heads provide the real implementation.
+/// The shared library compiles as neutral net9.0, so platform heads provide the real implementation.
 /// </summary>
 public interface IMobileUpdateInstaller
 {
