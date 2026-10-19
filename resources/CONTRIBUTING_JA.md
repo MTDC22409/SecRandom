@@ -25,7 +25,7 @@ SecRandom v3 は .NET デスクトップアプリケーションです。
 
 ### 前提条件
 
-- [.NET SDK 10.0.x](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [.NET SDK 9.0.x](https://dotnet.microsoft.com/download/dotnet/9.0)
 - Git
 - 対象プラットフォームに対応するデスクトップ実行環境。パッケージとインストールの詳細は各リリースノートを参照してください。
 
